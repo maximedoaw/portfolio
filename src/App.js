@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import "./styles/Navbar.css";
 import Footer from './components/Footer';
 import DisplayDetail from './pages/DisplayDetail';
+import School from './pages/school';
 function App() {
   return (
     <div className='todo-app'>
@@ -17,6 +18,8 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/experience' element={<Experiences/>}/>
           <Route path='/projects'  element={<Projects/>}/>
+          <Route path='/school'  element={<School/>}/>
+
           {/*<Route path='/projects/:id' element={<DisplayDetail/>}/>*/}
         </Routes>
         <Footer/>
